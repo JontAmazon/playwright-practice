@@ -1,9 +1,7 @@
-const { test, expect } = require('@playwright/test');
-const LoginPage = require('../pages/LoginPage');
+const { test, expect } = require('../fixtures/fixtures');
 
-test('Test Case 1: Log in', async ({ page }) => {
-  const loginPage = new LoginPage(page);
+test('Login test', async ({ loginPage }) => {
   await loginPage.login();
-  await expect(page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();
-  await expect(page.getByText('Log Out')).toBeVisible();
+  await expect(loginPage.page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();
+  await expect(loginPage.page.getByText('Log Out')).toBeVisible();
 });
