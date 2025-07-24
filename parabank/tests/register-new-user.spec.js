@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Register new account', async ({ page }) => {
+test('Register new user', async ({ page }) => {
   const username = 'user' + Date.now();
   const password = 'password';
   console.log(username);
