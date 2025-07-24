@@ -1,11 +1,8 @@
 # TESTS TODO:
-- Accounts overview - be able to see balance. Todo: how to verify this?
 - Transfer funds -> verify the money was indeed transferred from account A to account B.
 
 skip:
-- register new user
 - forgot login info
-- log in -> log out -> log in again
 
 
 # QUESTIONS:
@@ -21,3 +18,13 @@ skip:
     - MAYBE just during PART of a test?
 
 
+
+
+# MISC CODE NOTES
+// Sleep
+await new Promise(resolve => setTimeout(resolve, 10000));
+
+// Log variable in browser console
+await page.evaluate((uname) => {
+  console.log('Hello from browser, new user:', uname);
+}, username);
