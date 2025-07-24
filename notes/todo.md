@@ -1,8 +1,9 @@
 # TESTS TODO:
 - Transfer funds -> verify the money was indeed transferred from account A to account B.
 
-skip:
-- forgot login info
+
+# TODO:
+- run all tests
 
 
 # QUESTIONS:
@@ -16,6 +17,11 @@ skip:
 - API testing? And what else can I do with /services? (ask gpt?)
 - fail some test(s) if there are javascript exceptions in the console? Can I do this for just one single test? Watch: https://youtu.be/jKhTcQAtIKY?si=vJXvtlA9HOEtwFry 
     - MAYBE just during PART of a test?
+
+
+
+# SKIP TESTS:
+- forgot login info
 
 
 

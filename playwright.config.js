@@ -1,6 +1,6 @@
 module.exports = {
   use: {
-    trace: 'on', // or 'retain-on-failure'
+    trace: 'on', // better IRL: 'retain-on-failure'
   },
 };
 
