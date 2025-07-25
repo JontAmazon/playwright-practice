@@ -1,15 +1,20 @@
-// fixtures.js
-// Extends Playwright's base test to provide a custom `loginPage` fixture.
-// This fixture navigates to the login page and gives tests easy access to LoginPage methods.
+/* Fixtures for login and automatic error logging in Playwright tests.
+
+Usage:
+Tests should import either "testWithLogin" or "test" depending
+on whether or not they use the LoginPage functionality.
+*/
 
 const { test: baseTest, expect } = require('@playwright/test');
+const loginFixture = require('./fixture-login');
+const errorLoggerFixture = require('./fixture-error-logger');
 
-const LoginPage = require('../pages/LoginPage');
+// To be imported in tests without login:
+const test = baseTest
+  .extend(errorLoggerFixture);
 
-const test = baseTest.extend({
-  loginPage: async ({ page }, use) => {
-    await use(new LoginPage(page));
-  },
-});
+  // To be imported in tests with login:
+const testWithLogin = test
+  .extend(loginFixture);
 
-module.exports = { test, expect };
+module.exports = { test, testWithLogin, expect };

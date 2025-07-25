@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../fixtures/fixtures');
 
 test('Register new user', async ({ page }, testInfo) => {
   const username = 'user' + Date.now();
@@ -28,7 +28,7 @@ test('Register new user', async ({ page }, testInfo) => {
     await expect(page.getByText('Your account was created')).toBeVisible();
   } catch (err) {
     if (await page.locator('text=verify you are human').count() > 0) { // works?
-      // throw new Error('CAPTCHA detected.');
+      // throw new Error('CAPTCHA detected.'); // alternative to skipping
       testInfo.skip(true, 'CAPTCHA detected'); // works?
     }
     const content = await page.locator('#rightPanel').textContent();

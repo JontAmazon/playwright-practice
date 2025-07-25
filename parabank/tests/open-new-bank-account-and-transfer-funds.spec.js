@@ -4,10 +4,10 @@
 //    - open-new-bank-account
 //    - transfer-funds
 
-const { test, expect } = require('../fixtures/fixtures');
+const { testWithLogin, expect } = require('../fixtures/fixtures');
 const { getAccountOverviewTableData, getAccountBalance } = require('../utils');
 
-test('Open new bank account and transfer funds', async ({ loginPage }) => {
+testWithLogin('Open new bank account and transfer funds', async ({ loginPage }) => {
   /* Test steps:
       1. Login.
       2. Find first account (account A) and its balance.

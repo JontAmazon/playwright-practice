@@ -1,7 +1,7 @@
-const { test, expect } = require('../fixtures/fixtures');
+const { testWithLogin, expect } = require('../fixtures/fixtures');
 // const { getAccountOverviewTableData, getAccountBalance } = require('../utils');
 
-test('Account overview - balances shall be visible', async ({ loginPage }) => {
+testWithLogin('Account overview - balances shall be visible', async ({ loginPage }) => {
   await loginPage.login();
   await expect(loginPage.page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();
 
