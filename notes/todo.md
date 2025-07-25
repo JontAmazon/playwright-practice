@@ -1,12 +1,5 @@
-# TESTS TODO:
-- Transfer funds -> verify the money was indeed transferred from account A to account B.
-
-
 # TODO:
-- run all tests
-
-
-# QUESTIONS:
+- run all tests, one after another (or in parallel?)
 
 
 
@@ -17,20 +10,18 @@
 - API testing? And what else can I do with /services? (ask gpt?)
 - fail some test(s) if there are javascript exceptions in the console? Can I do this for just one single test? Watch: https://youtu.be/jKhTcQAtIKY?si=vJXvtlA9HOEtwFry 
     - MAYBE just during PART of a test?
-
-
-
-# SKIP TESTS:
-- forgot login info
+- testing on different devices / test.use?
 
 
 
 
 # MISC CODE NOTES
-// Sleep
-await new Promise(resolve => setTimeout(resolve, 10000));
+// Sleep:    await new Promise(resolve => setTimeout(resolve, 10000));
 
-// Log variable in browser console
-await page.evaluate((uname) => {
-  console.log('Hello from browser, new user:', uname);
-}, username);
+
+
+
+# SKIP:
+- forgot login info
+- bill pay
+- find transactions

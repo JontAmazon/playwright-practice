@@ -1,10 +1,10 @@
 const { test, expect } = require('../fixtures/fixtures');
 
-test('Account overview, balances shall be visible', async ({ loginPage }) => {
+test('Account overview - balances shall be visible', async ({ loginPage }) => {
   await loginPage.login();
   await expect(loginPage.page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();
 
-  const table = loginPage.page.locator('table'); // Main table
+  const table = loginPage.page.locator('table'); // Account overview table
   
   // Verify column headers
   const headers = table.locator('tr >> nth=0 >> th');
