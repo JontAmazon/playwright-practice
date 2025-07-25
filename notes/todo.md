@@ -1,12 +1,6 @@
-# WIP:
-- try to get fixture-error-logger to work
-
-
-
 # TODO:
 - have others written code for Parabank? Look at their code.
 - API testing? And what else can I do with /services? (ask gpt?)
-- populate README
 
 
 

@@ -1,8 +1,10 @@
 /* Fixtures for login and automatic error logging in Playwright tests.
 
 Usage:
-Tests should import either "testWithLogin" or "test" depending
-on whether or not they use the LoginPage functionality.
+This fixture exports:
+  { test, testWithLogin, expect }
+testWithLogin should be used in tests where login occurs.
+test should should be used elsewhere.
 */
 
 const { test: baseTest, expect } = require('@playwright/test');
