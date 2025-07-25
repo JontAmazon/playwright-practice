@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test');
 
-test('Register new user', async ({ page }) => {
+test('Register new user', async ({ page }, testInfo) => {
   const username = 'user' + Date.now();
   const password = 'password';
   console.log(username);
@@ -22,7 +22,17 @@ test('Register new user', async ({ page }) => {
 
   await page.getByRole('button', { name: 'Register' }).click();
 
-  await expect(page.getByText('Your account was created')).toBeVisible();
+  try {
+    await expect(page.getByText('Your account was created')).toBeVisible();
+  } catch (err) {
+    if (await page.locator('text=verify you are human').count() > 0) { // works?
+      // throw new Error('CAPTCHA detected.');
+      testInfo.skip(true, 'CAPTCHA detected'); // works?
+    }
+    const content = await page.locator('#rightPanel').textContent();
+    console.log(content);
+    throw err;
+  }
   await expect(page.getByText('You are now logged in')).toBeVisible();
 
   await page.getByRole('link', { name: 'Log Out' }).click();
