@@ -1,12 +1,12 @@
 # TODO:
-- have others written code for Parabank? Look at their code.
-- API testing? And what else can I do with /services? (ask gpt?)
+- have others written code for Parabank? Look at their code. /Forum
+- testing on different devices / test.use?
 
 
 
 # LATER CONSIDER:
-- testing on different devices / test.use?
 - fail some test if there are javascript exceptions in the console? Maybe just during a PART of a test? Watch: https://youtu.be/jKhTcQAtIKY?si=vJXvtlA9HOEtwFry 
+- API testing? And what else can I do with /services? (ask gpt?)
 
 
 

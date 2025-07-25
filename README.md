@@ -1,4 +1,4 @@
-### Practicing Playwright on this virtual bank demo site:
+### Practicing Playwright end-to-end UI testing on this virtual bank demo site:
 https://parabank.parasoft.com/parabank/index.htm
 
 # TESTS COVER:
