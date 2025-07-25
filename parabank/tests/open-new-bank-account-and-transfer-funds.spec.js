@@ -42,4 +42,21 @@ test('Open new bank account and transfer funds', async ({ loginPage }) => {
   balanceA = await getAccountBalance(page, accountA);
   expect(balanceB).toBeCloseTo(100, 1);
   expect(balanceA).toBeCloseTo(initialBalanceA - 100, 1);
+
+  // Transfer $100 from B to A
+  await page.getByRole('link', { name: 'Transfer Funds' }).click();
+  await page.locator('#amount').fill('100');
+  await page.locator('#fromAccountId').selectOption(accountB);
+  await page.locator('#toAccountId').selectOption(accountA);
+  await page.getByRole('button', { name: 'Transfer' }).click();
+  await expect(page.locator('#showResult h1')).toHaveText('Transfer Complete!');
+  await expect(page.locator('#showResult h1')).toBeVisible();
+
+  // Go to overview and verify balances:
+  // A shall have original amount, B shall have $0.
+  await page.getByRole('link', { name: 'Accounts Overview' }).click();
+  balanceA = await getAccountBalance(page, accountA);
+  balanceB = await getAccountBalance(page, accountB);
+  expect(balanceA).toBeCloseTo(initialBalanceA , 1);
+  expect(balanceB).toBeCloseTo(0, 1);
 });
