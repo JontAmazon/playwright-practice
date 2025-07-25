@@ -8,6 +8,8 @@ test('Register new user', async ({ page }, testInfo) => {
   await page.goto('https://parabank.parasoft.com/parabank/index.htm');
   await page.getByRole('link', { name: 'Register' }).click();
   
+  const firstNameInput = page.locator('#customer\\.firstName');
+  await expect(firstNameInput).toBeEditable();
   await page.fill('#customer\\.firstName', 'John');
   await page.fill('#customer\\.lastName', 'Smith');
   await page.fill('#customer\\.address\\.street', 'Street X');

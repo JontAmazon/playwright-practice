@@ -1,23 +1,17 @@
 # TODO:
-- run all tests, one after another (or in parallel?)
-
+- have others written code for Parabank? Look at their code.
+- API testing? And what else can I do with /services? (ask gpt?)
 
 
 
 # LATER CONSIDER:
-- use a page object model for better maintainability?
-- have others written code for Parabank? Look at their code.
-- API testing? And what else can I do with /services? (ask gpt?)
-- fail some test(s) if there are javascript exceptions in the console? Can I do this for just one single test? Watch: https://youtu.be/jKhTcQAtIKY?si=vJXvtlA9HOEtwFry 
-    - MAYBE just during PART of a test?
 - testing on different devices / test.use?
+- fail some test if there are javascript exceptions in the console? Maybe just during a PART of a test? Watch: https://youtu.be/jKhTcQAtIKY?si=vJXvtlA9HOEtwFry 
 
 
 
-
-# MISC CODE NOTES
-// Sleep:    await new Promise(resolve => setTimeout(resolve, 10000));
-
+# SLEEP:
+await new Promise(resolve => setTimeout(resolve, 10000));
 
 
 
