@@ -1,4 +1,5 @@
 const { test, expect } = require('../fixtures/fixtures');
+// const { getAccountOverviewTableData, getAccountBalance } = require('../utils');
 
 test('Account overview - balances shall be visible', async ({ loginPage }) => {
   await loginPage.login();
@@ -18,7 +19,7 @@ test('Account overview - balances shall be visible', async ({ loginPage }) => {
 
   // Verify balance cell contains a dollar amount
   const balanceCell = table.locator('tr >> nth=1 >> td >> nth=1');
-  await expect(balanceCell).toHaveText(/^\$\d/);
+  await expect(balanceCell).toHaveText(/^-?\$\d/); // Allow negative balances
 
   // Verify available amount contains dollar amount
   const availableCell = table.locator('tr >> nth=1 >> td >> nth=2');
