@@ -1,7 +1,7 @@
 # Practicing Playwright end-to-end UI testing on this virtual bank demo site:
 https://parabank.parasoft.com/parabank/index.htm
 
-## TESTS COVER:
+## Tests cover:
 - User login
 - Registering a new user
 - Viewing account overview
@@ -9,7 +9,7 @@ https://parabank.parasoft.com/parabank/index.htm
 - Transferring funds
 - Contacting customer support
 
-## FEATURES:
+## Features:
   - LoginPage: a basic Page Object Model abstraction to handle login.
   - Fixture for easy login.
   - Fixture for automatically logging any client-side JavaScript console errors and warnings, even if the test passes.
@@ -17,7 +17,7 @@ https://parabank.parasoft.com/parabank/index.htm
     - Parsing account overview table data
     - Retrieving account balances
 
-## HOW TO RUN:
+## How to run:
 1. Install Node.js, if you haven't already: https://nodejs.org/
 1. git clone https://github.com/JontAmazon/playwright.git
 2. cd to playwright repo, then run:
