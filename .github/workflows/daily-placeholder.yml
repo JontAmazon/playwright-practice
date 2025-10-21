@@ -1,0 +1,39 @@
+name: Commit dummy file to result branch (WIP)  # WIP to verify pipeline
+on:
+  schedule:
+    - cron: '0 3 * * *'   # every day at 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  run-playwright-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Switch to placeholder branch
+        run: |
+          git fetch origin
+          git checkout origin/placeholder
+
+      - name: Upload results artifact (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: placeholder.json
+
+      - name: Commit results to placeholder branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p test-results
+          DATE=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
+          cp placeholder.json test-results/${DATE}.json
+          cp placeholder.json test-results/latest.json
+
+          git status
+          git add test-results
+          git commit -m "Update placeholder results for ${DATE}" || echo "Nothing to commit"
+          git push origin HEAD:placeholder
