@@ -1,0 +1,12 @@
+
+node_modules/
+test-results/
+
+
+# misc random files
+network_log.txt
+test-misc-stuff
+playwright-example-output/
+results.txt
+results.json
+

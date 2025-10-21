@@ -1,0 +1,52 @@
+name: Daily Playwright Tests
+on:
+  schedule:
+    - cron: '0 3 * * *'   # every day at 03:00 UTC
+  workflow_dispatch:
+
+jobs:
+  run-playwright-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Switch to results3 branch
+        run: |
+          git fetch origin
+          git checkout origin/results3 || git checkout -b results3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm ci
+          npx playwright install --with-deps
+
+      - name: Run Playwright tests
+        run: |
+          npx playwright test tests --reporter=json > results.json || true
+
+      - name: Upload results artifact (optional)
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: results.json
+
+      - name: Commit results to results branch
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          mkdir -p test-results-history
+          DATE=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
+          cp results.json test-results-history/${DATE}.json
+
+          git status
+          git add test-results-history
+          git commit -m "Update Playwright results for ${DATE}" || echo "Nothing to commit"
+          git push origin HEAD:results3

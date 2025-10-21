@@ -31,4 +31,3 @@ You’ll need to manually register a new account on Parabank.
 You can use any fake data, except for:
 - Username: JohnSmith42
 - Password: password
-Update your login credentials in the LoginPage file if you change these.
