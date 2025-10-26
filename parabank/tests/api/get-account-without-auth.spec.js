@@ -1,8 +1,8 @@
 const { test, expect } = require('@playwright/test');
 
-test('Should deny access to account info without authentication', async ({ request }) => {
+test('Deny access to account info without authentication', async ({ request }) => {
     const baseURL = 'https://parabank.parasoft.com/parabank/services/bank';
-    const fakeAccountId = 12345;
+    const fakeAccountId = 12345678932624213786; // Presumably non-existent account ID
     const endpoint = `${baseURL}/accounts/${fakeAccountId}`;
     const response = await request.get(endpoint);
 

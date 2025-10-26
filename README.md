@@ -10,6 +10,7 @@ https://parabank.parasoft.com/parabank/index.htm
 - Contacting customer support
 
 ## FEATURES:
+  - Daily Job via GitHub Actions that executes all tests and commits the test result to a separate branch.
   - LoginPage: a basic Page Object Model abstraction to handle login.
   - Fixture for easy login.
   - Fixture for automatically logging any client-side JavaScript console errors and warnings, even if the test passes.
@@ -22,12 +23,6 @@ https://parabank.parasoft.com/parabank/index.htm
 1. git clone https://github.com/JontAmazon/playwright.git
 2. cd to repo
 3. npm install
-4. npx playwright test tests -ui
-5. npx playwright show-report
+4. npx playwright test tests --workers=1
 
-Before you run the tests:
-You’ll need to manually register a new account on Parabank.
-(Accounts are frequently wiped from the site.)
-You can use any fake data, except for:
-- Username: JohnSmith42
-- Password: password
+Note: Parabank continuously wipes accounts, therefore the user registration test is run first by using workers=1 and prefixing its test name with "0": 0-register-new-user.spec.js

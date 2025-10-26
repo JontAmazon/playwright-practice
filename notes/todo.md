@@ -1,14 +1,23 @@
-# AUTOMATION / PORTFOLIO PROJECT:
-- git rm placeholder.json
-- kommer det att funka? iom att account
-  - kommer jag att behöva köra "register new account" FÖRST?
-    - hur göra det?
+# Portfolio graph / automation project:
 
 
-# later, when stable:
-- remove this from daily job:
-  mkdir -p test-results-history-verbose
-  cp -r test-results test-results-history-verbose/${DATE}
+
+- email notifications!
+
+
+
+# EV try to implement:
+- it might be better to use $DATE in register-new-user, so I could run all tests without 1 test always failing when running the job multiple times in a row.
+  - also, I wouldn't RELY on the account being wiped every day (even though currently, that's the case)
+  - would require login fixture to read from file?
+  ... hm... but then, hm... it's simply not so pretty either.
+
+
+
+- later, when stable:
+  - remove this from daily job:
+    mkdir -p test-results-history-verbose
+    cp -r test-results test-results-history-verbose/${DATE}
 
 
 
