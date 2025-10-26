@@ -1,10 +1,14 @@
 # AUTOMATION / PORTFOLIO PROJECT:
+- git rm placeholder.json
 - kommer det att funka? iom att account
   - kommer jag att behöva köra "register new account" FÖRST?
     - hur göra det?
 
 
-
+# later, when stable:
+- remove this from daily job:
+  mkdir -p test-results-history-verbose
+  cp -r test-results test-results-history-verbose/${DATE}
 
 
 

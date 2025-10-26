@@ -9,4 +9,5 @@ test-misc-stuff
 playwright-example-output/
 results.txt
 results.json
+parabank/tests/overview-all-tests.md
 

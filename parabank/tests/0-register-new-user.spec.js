@@ -1,7 +1,8 @@
 const { test, expect } = require('../fixtures/fixtures');
 
 test('Register new user', async ({ page }, testInfo) => {
-  const username = 'user' + Date.now();
+  // const username = 'user' + Date.now();
+  const username = 'JohnSmith42';
   const password = 'password';
   console.log(username);
   
