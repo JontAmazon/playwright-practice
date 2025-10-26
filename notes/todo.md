@@ -1,24 +1,12 @@
-# TODO:
-- NOTE: git status shows I'm DELETING the file... hm...
-
-3. why would placeholder work, but not results2?
-
-
-# Steps that could work:
-git checkout -b placeholder origin/placeholder... at least manually.
-(rebase master if needed)
+# AUTOMATION / PORTFOLIO PROJECT:
+- kommer det att funka? iom att account
+  - kommer jag att behöva köra "register new account" FÖRST?
+    - hur göra det?
 
 
 
 
 
-# --------- EVEV -----------
-# Fix for manual rebase issue:
-# git push -f origin/placeholder
-fatal: You are not currently on a branch.
-To push the history leading to the current (detached HEAD)
-state now, use
-    git push origin/placeholder HEAD:<name-of-remote-branch>
 
 
 
@@ -30,10 +18,13 @@ state now, use
 
 
 
-
 # EV:
 - testing on different devices / test.use?
 - API testing?
+
+
+# TTRT:
+- om jag får problem senare, kan "wait for browser idle" lösa det? som verkade krävas i notes appen.
 
 
 # EVEV:

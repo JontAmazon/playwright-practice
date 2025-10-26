@@ -45,6 +45,9 @@ jobs:
           mkdir -p test-results-history
           DATE=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
           cp results.json test-results-history/${DATE}.json
+          
+          mkdir -p test-results-history-verbose
+          cp -r test-results test-results-history-verbose/${DATE}
 
           git status
           git add test-results-history
