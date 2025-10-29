@@ -11,7 +11,6 @@
     - work on new branch 'dev' (and push it to github).
     - add new workflow "daily-tests-dev", which checks out 'dev' and pushes the results to 'results-dev'. (GH action).
 
-- email notifications!
 
 - remove ANSI colors from playwright output:
     name: Run Playwright (JSON)
