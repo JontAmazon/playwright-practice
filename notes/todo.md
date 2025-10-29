@@ -1,8 +1,26 @@
-# Portfolio graph / automation project:
+# TODO
 
+- [portfolio]:
+  - conditionally show graph
 
+- verify "test-results-history-verbose"
+
+- add/fix test: Deny access to account info without authentication.
+  - Test fix: see notes/test-draft.js
+  - CI/CD:
+    - work on new branch 'dev' (and push it to github).
+    - add new workflow "daily-tests-dev", which checks out 'dev' and pushes the results to 'results-dev'. (GH action).
 
 - email notifications!
+
+- remove ANSI colors from playwright output:
+    name: Run Playwright (JSON)
+    env:
+      NO_COLOR: "1"
+      FORCE_COLOR: "0"
+    run: |
+      npx playwright test tests --workers=1 --reporter=json > results.json || true
+
 
 
 
@@ -21,6 +39,9 @@
 
 
 
+# EV future 'features':
+- dev branches (both for code and test results)
+- email notifications?
 
 
 
