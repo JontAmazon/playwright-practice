@@ -51,5 +51,6 @@ jobs:
 
           git status
           git add test-results-history
+          git add test-results-history-verbose
           git commit -m "Update Playwright results for ${DATE}" || echo "Nothing to commit"
           git push origin HEAD:results3
