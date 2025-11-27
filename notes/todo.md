@@ -1,10 +1,5 @@
 # TODO
 
-- [portfolio]:
-  - conditionally show graph
-
-- verify "test-results-history-verbose"
-
 - add/fix test: Deny access to account info without authentication.
   - Test fix: see notes/test-draft.js
   - CI/CD:

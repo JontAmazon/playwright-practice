@@ -1,0 +1,23 @@
+/playwright
+
+.gitignore
+.github/workflows/
+  daily-tests.yml
+node_modules/
+package-lock.json
+package.json
+playwright.config.js
+test-results/
+README.md
+parabank/
+  utils.js
+  pages/LoginPage.js
+  fixtures/
+    fixture-login.js
+    fixtures.js
+    fixture-error-logger.js
+  tests/
+    0-register-new-user.spec.js
+    account-overview-spec.js
+    contact-customer-support.spec.js
+    login.spec.js
