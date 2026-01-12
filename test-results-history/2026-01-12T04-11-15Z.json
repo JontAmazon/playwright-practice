@@ -1,0 +1,325 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/playwright-practice/playwright-practice/playwright.config.js",
+    "rootDir": "/home/runner/work/playwright-practice/playwright-practice",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/20907790871"
+      },
+      "gitCommit": {
+        "shortHash": "d3b76a5",
+        "hash": "d3b76a5687e01ba7a420a4d0eba2432c3a8d4920",
+        "subject": "Update Playwright results for 2026-01-11T04-09-56Z",
+        "body": "Update Playwright results for 2026-01-11T04-09-56Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1768104596000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1768104596000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/playwright-practice/playwright-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/20907790871"
+          },
+          "gitCommit": {
+            "shortHash": "d3b76a5",
+            "hash": "d3b76a5687e01ba7a420a4d0eba2432c3a8d4920",
+            "subject": "Update Playwright results for 2026-01-11T04-09-56Z",
+            "body": "Update Playwright results for 2026-01-11T04-09-56Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1768104596000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1768104596000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/runner/work/playwright-practice/playwright-practice",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "parabank/tests/0-register-new-user.spec.js",
+      "file": "parabank/tests/0-register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Register new user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2014,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "JohnSmith42\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:11:09.298Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "98ba9b3e31b87839a775-a009a6e4804a66e39957",
+          "file": "parabank/tests/0-register-new-user.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/account-overview.spec.js",
+      "file": "parabank/tests/account-overview.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Account overview - balances shall be visible",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 969,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:11:11.398Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "41fb299d6e62ced24a4a-d240e75a18607ab31d0e",
+          "file": "parabank/tests/account-overview.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/contact-customer-support.spec.js",
+      "file": "parabank/tests/contact-customer-support.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact form submits successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1106,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:11:12.373Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1d82641005b406053557-b8bd8e6a48c56455b446",
+          "file": "parabank/tests/contact-customer-support.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/login.spec.js",
+      "file": "parabank/tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 992,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:11:13.485Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "d1c54560479264449939-172092beab3c6dddd7b3",
+          "file": "parabank/tests/login.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Open new bank account and transfer funds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-12T04:11:14.481Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "6d3400fe454299fb1607-9e9921fc5bd672826ec0",
+          "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+          "line": 15,
+          "column": 15
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-12T04:11:08.532Z",
+    "duration": 5999.5509999999995,
+    "expected": 4,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
