@@ -1,0 +1,433 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/playwright-practice/playwright-practice/playwright.config.js",
+    "rootDir": "/home/runner/work/playwright-practice/playwright-practice",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/25204769399"
+      },
+      "gitCommit": {
+        "shortHash": "e8c2f8c",
+        "hash": "e8c2f8c851ac21bf3090f5fec24fb58dc63f5412",
+        "subject": "Update Playwright results for 2026-04-30T05-59-40Z",
+        "body": "Update Playwright results for 2026-04-30T05-59-40Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1777528780000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1777528780000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/playwright-practice/playwright-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/25204769399"
+          },
+          "gitCommit": {
+            "shortHash": "e8c2f8c",
+            "hash": "e8c2f8c851ac21bf3090f5fec24fb58dc63f5412",
+            "subject": "Update Playwright results for 2026-04-30T05-59-40Z",
+            "body": "Update Playwright results for 2026-04-30T05-59-40Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1777528780000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1777528780000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/runner/work/playwright-practice/playwright-practice",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "parabank/tests/0-register-new-user.spec.js",
+      "file": "parabank/tests/0-register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Register new user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 35025,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js",
+                        "column": 14,
+                        "line": 9
+                      },
+                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   7 |   console.log(username);\n   8 |   \n>  9 |   await page.goto('https://parabank.parasoft.com/parabank/index.htm');\n     |              ^\n  10 |   await page.getByRole('link', { name: 'Register' }).click();\n  11 |   \n  12 |   const firstNameInput = page.locator('#customer\\\\.firstName');\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js:9:14"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "JohnSmith42\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-01T06:16:45.667Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-1",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-0-register-new-user-Register-new-user/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-0-register-new-user-Register-new-user/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "98ba9b3e31b87839a775-a009a6e4804a66e39957",
+          "file": "parabank/tests/0-register-new-user.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/account-overview.spec.js",
+      "file": "parabank/tests/account-overview.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Account overview - balances shall be visible",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 35027,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/pages/LoginPage.js",
+                        "column": 21,
+                        "line": 11
+                      },
+                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at parabank/pages/LoginPage.js:11\n\n   9 |\n  10 |   async login(username = 'JohnSmith42', password = 'password') {\n> 11 |     await this.page.goto(this.BASE_URL);\n     |                     ^\n  12 |     await this.usernameInput.fill(username);\n  13 |     await this.passwordInput.fill(password);\n  14 |     await this.loginButton.click();\n    at LoginPage.login (/home/runner/work/playwright-practice/playwright-practice/parabank/pages/LoginPage.js:11:21)\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js:5:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-01T06:17:21.357Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-1",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-account-ove-0fae4---balances-shall-be-visible/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-account-ove-0fae4---balances-shall-be-visible/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41fb299d6e62ced24a4a-d240e75a18607ab31d0e",
+          "file": "parabank/tests/account-overview.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/contact-customer-support.spec.js",
+      "file": "parabank/tests/contact-customer-support.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact form submits successfully",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 35025,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/contact-customer-support.spec.js",
+                        "column": 14,
+                        "line": 4
+                      },
+                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n  2 |\n  3 | test('Contact form submits successfully', async ({ page }) => {\n> 4 |   await page.goto('https://parabank.parasoft.com/parabank/index.htm');\n    |              ^\n  5 |   await page.getByRole('link', { name: 'Contact Us' }).click();\n  6 |   await page.waitForURL('**/contact.htm*');\n  7 |   await page.fill('#name', 'John Smith');\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/contact-customer-support.spec.js:4:14"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-01T06:17:57.042Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-1",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-contact-cus-78ed5-t-form-submits-successfully/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-contact-cus-78ed5-t-form-submits-successfully/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1d82641005b406053557-b8bd8e6a48c56455b446",
+          "file": "parabank/tests/contact-customer-support.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/login.spec.js",
+      "file": "parabank/tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 35024,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/pages/LoginPage.js",
+                        "column": 21,
+                        "line": 11
+                      },
+                      "message": "Error: page.goto: net::ERR_ABORTED; maybe frame was detached?\nCall log:\n\u001b[2m  - navigating to \"https://parabank.parasoft.com/parabank/index.htm\", waiting until \"load\"\u001b[22m\n\n\n   at parabank/pages/LoginPage.js:11\n\n   9 |\n  10 |   async login(username = 'JohnSmith42', password = 'password') {\n> 11 |     await this.page.goto(this.BASE_URL);\n     |                     ^\n  12 |     await this.usernameInput.fill(username);\n  13 |     await this.passwordInput.fill(password);\n  14 |     await this.loginButton.click();\n    at LoginPage.login (/home/runner/work/playwright-practice/playwright-practice/parabank/pages/LoginPage.js:11:21)\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js:4:19"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-01T06:18:32.723Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-1",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-login-Login-test/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-login-Login-test/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d1c54560479264449939-172092beab3c6dddd7b3",
+          "file": "parabank/tests/login.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Open new bank account and transfer funds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-01T06:19:07.848Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "6d3400fe454299fb1607-9e9921fc5bd672826ec0",
+          "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+          "line": 15,
+          "column": 15
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-01T06:16:44.924Z",
+    "duration": 142933.375,
+    "expected": 0,
+    "skipped": 1,
+    "unexpected": 4,
+    "flaky": 0
+  }
+}
