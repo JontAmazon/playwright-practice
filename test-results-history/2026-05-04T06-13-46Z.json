@@ -1,0 +1,471 @@
+{
+  "config": {
+    "configFile": "/home/runner/work/playwright-practice/playwright-practice/playwright.config.js",
+    "rootDir": "/home/runner/work/playwright-practice/playwright-practice",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "ci": {
+        "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+        "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/25303954965"
+      },
+      "gitCommit": {
+        "shortHash": "0722285",
+        "hash": "07222857ccb42703d9c4172b3674cfe3a5172622",
+        "subject": "Update Playwright results for 2026-05-03T06-05-54Z",
+        "body": "Update Playwright results for 2026-05-03T06-05-54Z\n",
+        "author": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1777788355000
+        },
+        "committer": {
+          "name": "github-actions[bot]",
+          "email": "github-actions[bot]@users.noreply.github.com",
+          "time": 1777788355000
+        },
+        "branch": "HEAD"
+      },
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/home/runner/work/playwright-practice/playwright-practice/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "ci": {
+            "commitHref": "https://github.com/JontAmazon/playwright-practice/commit/8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "commitHash": "8bc57e1f32244a9d0130c1ed640d0f82fe230f1b",
+            "buildHref": "https://github.com/JontAmazon/playwright-practice/actions/runs/25303954965"
+          },
+          "gitCommit": {
+            "shortHash": "0722285",
+            "hash": "07222857ccb42703d9c4172b3674cfe3a5172622",
+            "subject": "Update Playwright results for 2026-05-03T06-05-54Z",
+            "body": "Update Playwright results for 2026-05-03T06-05-54Z\n",
+            "author": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1777788355000
+            },
+            "committer": {
+              "name": "github-actions[bot]",
+              "email": "github-actions[bot]@users.noreply.github.com",
+              "time": 1777788355000
+            },
+            "branch": "HEAD"
+          },
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/runner/work/playwright-practice/playwright-practice",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.52.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "parabank/tests/0-register-new-user.spec.js",
+      "file": "parabank/tests/0-register-new-user.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Register new user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 6595,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Your account was created')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Your account was created')\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Your account was created')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Your account was created')\u001b[22m\n\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js:29:62",
+                    "location": {
+                      "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js",
+                      "column": 62,
+                      "line": 29
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 27 |\u001b[39m\n \u001b[90m 28 |\u001b[39m   \u001b[36mtry\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m     \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mgetByText(\u001b[32m'Your account was created'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m   } \u001b[36mcatch\u001b[39m (err) {\n \u001b[90m 31 |\u001b[39m     \u001b[36mif\u001b[39m (\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'text=verify you are human'\u001b[39m)\u001b[33m.\u001b[39mcount() \u001b[33m>\u001b[39m \u001b[35m0\u001b[39m) { \u001b[90m// works?\u001b[39m\n \u001b[90m 32 |\u001b[39m       \u001b[90m// throw new Error('CAPTCHA detected.'); // alternative to skipping\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js",
+                        "column": 62,
+                        "line": 29
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByText('Your account was created')\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Your account was created')\u001b[22m\n\n\n  27 |\n  28 |   try {\n> 29 |     await expect(page.getByText('Your account was created')).toBeVisible();\n     |                                                              ^\n  30 |   } catch (err) {\n  31 |     if (await page.locator('text=verify you are human').count() > 0) { // works?\n  32 |       // throw new Error('CAPTCHA detected.'); // alternative to skipping\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js:29:62"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "JohnSmith42\n"
+                    },
+                    {
+                      "text": "\n\t\t\t\t\t\n\n\nError!\n\n\n\nAn internal error has occurred and has been logged.\n\t\t\t\t\n"
+                    },
+                    {
+                      "text": "\n--- Errors in Register new user ---\n"
+                    },
+                    {
+                      "text": "\n[Console Errors]:\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-04T06:13:24.653Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-0",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-0-register-new-user-Register-new-user/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-0-register-new-user-Register-new-user/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/0-register-new-user.spec.js",
+                    "column": 62,
+                    "line": 29
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "98ba9b3e31b87839a775-a009a6e4804a66e39957",
+          "file": "parabank/tests/0-register-new-user.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/account-overview.spec.js",
+      "file": "parabank/tests/account-overview.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Account overview - balances shall be visible",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5820,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js:6:84",
+                    "location": {
+                      "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js",
+                      "column": 84,
+                      "line": 6
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 4 |\u001b[39m testWithLogin(\u001b[32m'Account overview - balances shall be visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ loginPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Accounts Overview'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 7 |\u001b[39m\n \u001b[90m 8 |\u001b[39m   \u001b[36mconst\u001b[39m table \u001b[33m=\u001b[39m loginPage\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'table'\u001b[39m)\u001b[33m;\u001b[39m \u001b[90m// Account overview table\u001b[39m\n \u001b[90m 9 |\u001b[39m   \u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js",
+                        "column": 84,
+                        "line": 6
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n\n\n  4 | testWithLogin('Account overview - balances shall be visible', async ({ loginPage }) => {\n  5 |   await loginPage.login();\n> 6 |   await expect(loginPage.page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();\n    |                                                                                    ^\n  7 |\n  8 |   const table = loginPage.page.locator('table'); // Account overview table\n  9 |   \n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js:6:84"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "\n--- Errors in Account overview - balances shall be visible ---\n"
+                    },
+                    {
+                      "text": "\n[Console Errors]:\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-04T06:13:32.102Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-0",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-account-ove-0fae4---balances-shall-be-visible/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-account-ove-0fae4---balances-shall-be-visible/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/account-overview.spec.js",
+                    "column": 84,
+                    "line": 6
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "41fb299d6e62ced24a4a-d240e75a18607ab31d0e",
+          "file": "parabank/tests/account-overview.spec.js",
+          "line": 4,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/contact-customer-support.spec.js",
+      "file": "parabank/tests/contact-customer-support.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Contact form submits successfully",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 986,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-04T06:13:38.742Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1d82641005b406053557-b8bd8e6a48c56455b446",
+          "file": "parabank/tests/contact-customer-support.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/login.spec.js",
+      "file": "parabank/tests/login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 5865,
+                  "error": {
+                    "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n",
+                    "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js:5:84",
+                    "location": {
+                      "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js",
+                      "column": 84,
+                      "line": 5
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m testWithLogin(\u001b[32m'Login test'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ loginPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m   \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m   \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByRole(\u001b[32m'heading'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'Accounts Overview'\u001b[39m }))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m   |\u001b[39m                                                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m   \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgetByText(\u001b[32m'Log Out'\u001b[39m))\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js",
+                        "column": 84,
+                        "line": 5
+                      },
+                      "message": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\n\nLocator: getByRole('heading', { name: 'Accounts Overview' })\nExpected: visible\nReceived: <element(s) not found>\nCall log:\n\u001b[2m  - expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { name: 'Accounts Overview' })\u001b[22m\n\n\n  3 | testWithLogin('Login test', async ({ loginPage }) => {\n  4 |   await loginPage.login();\n> 5 |   await expect(loginPage.page.getByRole('heading', { name: 'Accounts Overview' })).toBeVisible();\n    |                                                                                    ^\n  6 |   await expect(loginPage.page.getByText('Log Out')).toBeVisible();\n  7 | });\n  8 |\n    at /home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js:5:84"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "\n--- Errors in Login test ---\n"
+                    },
+                    {
+                      "text": "\n[Console Errors]:\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 500 ()\n"
+                    },
+                    {
+                      "text": "\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-04T06:13:39.803Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "_error-context-0",
+                      "contentType": "text/markdown",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-login-Login-test/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/home/runner/work/playwright-practice/playwright-practice/test-results/parabank-tests-login-Login-test/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/runner/work/playwright-practice/playwright-practice/parabank/tests/login.spec.js",
+                    "column": 84,
+                    "line": 5
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "d1c54560479264449939-172092beab3c6dddd7b3",
+          "file": "parabank/tests/login.spec.js",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Open new bank account and transfer funds",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [
+                {
+                  "type": "skip"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-05-04T06:13:45.803Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "6d3400fe454299fb1607-9e9921fc5bd672826ec0",
+          "file": "parabank/tests/open-new-bank-account-and-transfer-funds.spec.js",
+          "line": 15,
+          "column": 15
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-04T06:13:23.854Z",
+    "duration": 21968.043999999998,
+    "expected": 1,
+    "skipped": 1,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
